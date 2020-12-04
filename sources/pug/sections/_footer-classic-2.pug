@@ -1,0 +1,76 @@
+footer.section.footer-classic.footer-classic-md
+	.footer-classic-main
+		.container: .footer-classic-layout.justify-content-sm-around.justify-content-md-between.divider-4
+			.footer-classic-layout-item
+				+logo
+				.footer-classic-item-block.footer-classic-item-block-1
+					h6 Plus de 4000 étudiants satisfaits
+					.owl-carousel-quote-light
+						// Owl Carousel
+						.owl-carousel(
+						data-items='1'
+						data-dots='false'
+						data-nav='false'
+						data-stage-padding='0'
+						data-loop='true'
+						data-margin='30'
+						data-nav-custom='#footer-owl-nav'
+						data-animation-in='fadeIn'
+						data-animation-out='fadeOut'
+						data-mouse-drag='false')
+							blockquote.quote-light.quote-light-sm
+								.icon.linearicons-quote-open.text-primary.icon-md
+								.quote-light-main
+									.quote-light-text: q Le personnel ici est vraiment favorable, les enseignants sont super, l'école a une bonne structure. Merci!
+									cite.quote-light-cite Heloïse Favière
+							blockquote.quote-light.quote-light-sm
+								.icon.linearicons-quote-open.text-primary.icon-md
+								.quote-light-main
+									.quote-light-text: q J'apprécie vraiment mon expérience ici. Les professeurs sont très sympathiques et il y a une atmosphère amicale.
+									cite.quote-light-cite Romuald Duchant
+							blockquote.quote-light.quote-light-sm
+								.icon.linearicons-quote-open.text-primary.icon-md
+								.quote-light-main
+									.quote-light-text: q J'aime le fait qu'il y ait une atmosphère chargée mais ce n'est jamais stressant. Tout le monde est très gentil et vous pouvez demander n'importe quoi à tout moment.
+									cite.quote-light-cite Judith Grenassia
+						#footer-owl-nav.owl-nav
+							button.owl-arrow.owl-arrow-prev(aria-label='Prev'): +svg-prev
+							.owl-nav-divider
+							button.owl-arrow.owl-arrow-next(aria-label='Next'): +svg-next
+
+			.footer-classic-layout-item
+				h6.footer-classic-title.inset-3 Cours populaires
+				.footer-classic-item-block.footer-classic-item-block-3
+					ul.list-pricing
+						li: a(href='english-for-business.html')
+							span.list-pricing-title Anglais pour les enfants
+							span 45€
+						li: a(href='english-for-business.html')
+							span.list-pricing-title Apprentissage en ligne
+							span 15€
+						li: a(href='english-for-business.html')
+							span.list-pricing-title Club allemand
+							span 36€
+						li: a(href='english-for-business.html')
+							span.list-pricing-title Cours personnels
+							span 21€
+						li: a(href='english-for-business.html')
+							span.list-pricing-title Cours de groupe
+							span 15€
+
+			.footer-classic-layout-item
+				h6.footer-classic-title.inset-3 Entrer en contact
+				.footer-classic-item-block
+					ul.list.list-1
+						li: a(href='#') Envoyer un message
+						li: a(href='contact-us.html') Contacts
+						li: a(href='#') Demander un rappel
+					ul.list-inline.list-inline-md
+						li: a.link-2.icon.mdi.mdi-instagram(href='#')
+						li: a.link-2.icon.mdi.mdi-facebook(href='#')
+						li: a.link-2.icon.mdi.mdi-youtube-play(href='#')
+
+	.container.mt-0: .divider-2
+	.footer-classic-aside
+		.container
+			+rights

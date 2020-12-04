@@ -1,0 +1,59 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-tour-classic
+	
+block variables
+	- var activeCategory = 'Nos cours'
+	- var pageName = 'Nos cours'
+
+block page
+	// Page Header
+	+header-classic({
+		title: 'Nos cours',
+		bgImage: 'bg-image-4'
+	})
+		p.big Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit.
+		
+
+	section.section.section-md.bg-gray-100
+		.container
+			.row.row-40.row-xl-50.flex-lg-row-reverse
+				.col-lg-4
+					.block-custom-centered
+						include ../includes/_box-4
+				.col-lg-8
+					.row.row-30.row-xl-40
+						.col-sm-6
+							+tour-classic({
+								img: 'tour-list-2-1-365x248',
+								price: '20€',
+								title: 'Anglais pour les débutants',
+								caption: 'Mathieu Costa'
+							})
+						.col-sm-6
+							+tour-classic({
+								img: 'tour-list-2-2-365x248',
+								price: '15€',
+								title: 'Apprentissage en ligne',
+								caption: 'Mathieu Costa'
+							})
+						.col-sm-6
+							+tour-classic({
+								img: 'tour-list-2-3-365x248',
+								price: '15€',
+								title: 'Anglais pour le travail',
+								caption: 'Mathieu Costa'
+							})
+						.col-sm-6
+							+tour-classic({
+								img: 'tour-list-2-4-365x248',
+								price: '17€',
+								title: 'Anglais pour les enfants',
+								caption: 'Mathieu Costa'
+							})
+
+							
+
+	// Page Footer
+	include ../sections/_footer-classic-2

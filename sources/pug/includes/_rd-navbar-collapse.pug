@@ -1,0 +1,54 @@
+#rd-navbar-collapse.rd-navbar-collapse
+	button.rd-navbar-collapse-close(data-multitoggle='#rd-navbar-collapse')
+		span.rd-navbar-collapse-toggle-element.active: span
+	h4.font-weight-sbold Our Office
+	h5.ls-1 Rue Abel-Ferry, 75016 Paris
+	h5.ls-1: a(href='tel:#') 1-800-346-6277
+	.divider.divider-small
+	h4.font-weight-sbold Nos cours
+	// Owl Carousel
+	.owl-carousel.owl-carousel-tour-minimal(
+	data-items='1'
+	data-dots='true'
+	data-nav='false'
+	data-auto-width='true'
+	data-loop='true'
+	data-margin='0'
+	data-autoplay='true'
+	data-mouse-drag="false")
+		.owl-item-inner
+			+tour-minimal({
+				img: 'home-3-2-258x273',
+				title: 'Anglais pour les débutants',
+				price: '15€',
+				comment: 'Prix par cours',
+				caption: 'Notre meilleur cours d'anglais pour le niveau débutant.'
+			})
+
+		.owl-item-inner
+			+tour-minimal({
+				img: 'home-3-3-258x273',
+				title: 'Apprentissage en ligne',
+				price: '15€',
+				comment: 'Prix par cours',
+				caption: 'Parfait si vous préférez l'enseignement à distance.'
+			})
+
+		.owl-item-inner
+			+tour-minimal({
+				img: 'home-3-4-258x273',
+				title: 'Anglais pour le travail',
+				price: '20€',
+				comment: 'Prix par cours',
+				caption: 'Cours d'anglais des affaires conçu pour les managers.'
+			})
+
+		.owl-item-inner
+			+tour-minimal({
+				img: 'home-3-5-258x273',
+				title: 'Anglais pour les enfants',
+				price: '17€',
+				comment: 'Prix par cours',
+				caption: 'Cours d'anglais facile à apprendre pour les enfants.'
+			})
+	a.button.button-default-outline(href='contact-us.html') Entrer en contact
